@@ -1,0 +1,409 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Imbeko - Sign Up as a Tutor</title>
+        <meta name = "description" content = "We connect South Africans who are interested in learning isiXhosa or isiZulu with tutors who can teach them, face to face in small groups or individually" />
+         <!--favicons-->
+    	<link rel="shortcut icon" href="/favicon.ico">
+    	<link rel="icon" sizes="16x16 32x32 64x64" href="favicon/favicon.ico">
+    	<link rel="icon" type="image/png" sizes="196x196" href="favicon/favicon-192.png">
+      	<link rel="icon" type="image/png" sizes="160x160" href="favicon/favicon-160.png">
+      	<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96.png">
+      	<link rel="icon" type="image/png" sizes="64x64" href="favicon/favicon-64.png">
+      	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32.png">
+      	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16.png">
+      	<link rel="apple-touch-icon" href="favicon/favicon-57.png">
+      	<link rel="apple-touch-icon" sizes="114x114" href="favicon/favicon-114.png">
+      	<link rel="apple-touch-icon" sizes="72x72" href="favicon/favicon-72.png">
+      	<link rel="apple-touch-icon" sizes="144x144" href="favicon/favicon-144.png">
+      	<link rel="apple-touch-icon" sizes="60x60" href="favicon/favicon-60.png">
+      	<link rel="apple-touch-icon" sizes="120x120" href="favicon/favicon-120.png">
+      	<link rel="apple-touch-icon" sizes="76x76" href="favicon/favicon-76.png">
+
+        <!--bootstrap CSS-->
+        <link rel = "stylesheet" href = "css/bootstrap.css" type = "text/css">
+        <!--bootstrap theme CSS-->
+        <link rel = "stylesheet" href = "css/bootstrap-theme.css" type = "text/css">
+        <!--stylesheet-->
+        <link rel = "stylesheet" href = "css/style.css" type = "text/css">
+        <!--Google Fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+        <!--Font Awesome-->
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <!--Google Analytics-->
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-104379989-1', 'auto');
+          ga('send', 'pageview');
+        </script>
+
+    </head>
+
+    <div class = "container-fluid clearhack"></div>
+
+
+    <body id = "signup-body">
+        <nav id="header" class="navbar navbar-fixed-top">
+            <div id="header-container" class="container navbar-container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a id="brand" class="navbar-brand" href="index.html"><img src = "img/logo.png" /></a>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li class="dropdown">
+                            <a class="btn btn-secondary imbeko-red dropdown-toggle " data-toggle="dropdown" href="#">Sign Up
+                            <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="signup.html">Sign up to learn</a></li>
+                                <li><a href="signup-teach.html">Sign up as a tutor</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!-- /.nav-collapse -->
+            </div><!-- /.container -->
+        </nav><!--navbar-->
+
+        <div class = "container signup-form">
+                <div class = "row">
+                    <div class = "col-xs-12 text-center">
+                        <h1 class = "page-title">Sign Up as a Tutor</h1>
+                        <h3>Please fill in your details on this form and we'll get back to you for the next steps and to set up training for you!</h3>
+                    </div>
+                </div>
+                <br>
+                    <form id = "student-signup" method = "post" action = "signup-teach.php" role = "form">
+                        <div class = "form-view" id = "view1">
+                            <fieldset>
+
+                                <!--Name-->
+                                <div class = "row">
+                                    <div class = "form-group col-xs-12">
+                                    	<label for="name">Name and surname</label>
+                                        <input id="name" class="form-control" type="text" name = "name" placeholder="Your name" required>
+                                    </div>
+                                </div>
+                                <!--Email address-->
+                                <div class = "row">
+                                    <div class = "form-group col-xs-12">
+                                    	<label for="email">Email Address</label>
+                                        <input id="email" class="form-control" type="text" name = "email" placeholder="Your email address" required>
+                                    </div>
+                                </div>
+                                 <!--Cellphone Number-->
+                                <div class = "row">
+                                    <div class = "form-group col-xs-12">
+                                    	<label for="number">Cellphone number</label>
+                                        <input id="number" class="form-control" type="number" name = "number" placeholder="Your cellphone number" required>
+                                    </div>
+                                </div>
+                                <!--Language choice-->
+                                <div class = "row">
+                                	<div class = "form-group col-xs-12">
+                                		<h3>Language you can tutor in</h3>
+                                		<div class="radio">
+										  <label>
+										    <input type="radio" name = 'language' id = "language_1" value="xhosa"  checked>
+										    Xhosa
+										  </label>
+										</div>
+										<div class="radio">
+										  <label>
+										    <input type="radio" name = 'language' id = "language_2" value="zulu">
+										    Zulu
+										  </label>
+										</div>
+                                	</div>
+                                </div>
+                               <!--Location-->
+                                <div class = "row">
+                                    <div class = "col-xs-12">
+                                        <h3>Which area do you live in?</h3>
+                                    </div>
+                                </div>
+                                <div class = "row">
+                                    <div class = "form-group col-xs-12">
+                                        <input id="addressInput" class="form-control" type="text" name = "addressInput" placeholder="Enter a suburb" required>
+                                    </div>
+                                </div>
+                                <div class = "row">
+                                    <div class = "form-group col-xs-12">
+                                        <h2><strong>Suggest some potential lesson times which would suit your schedule</strong></h2>
+                                    </div>
+                                </div>
+                                <!--Time and date suggestion 1-->
+                                <div class = "form-group">
+                                    <div class = "row">
+                                        <div class = "col-xs-12">
+                                            <h3>Option 1</h3>
+                                        </div>
+                                    </div>
+                                    <div class = "row">
+                                        <div class = "col-xs-12 col-sm-6">
+                                            <select class = "form-control" id = "day-option1" name = "day-option1">
+                                                <option>Monday</option>
+                                                <option>Tuesday</option>
+                                                <option>Wednesday</option>
+                                                <option>Thursday</option>
+                                                <option>Friday</option>
+                                                <option>Saturday</option>
+                                            </select>
+                                        </div>
+                                        <div class = "col-xs-12 col-sm-6">
+                                            <select class = "form-control"  id = "time-option1" name = "time-option1">
+                                                <option>07h00</option>
+                                                <option>08h00</option>
+                                                <option>09h00</option>
+                                                <option>10h00</option>
+                                                <option>11h00</option>
+                                                <option>12h00</option>
+                                                <option>13h00</option>
+                                                <option>14h00</option>
+                                                <option>15h00</option>
+                                                <option>16h00</option>
+                                                <option>17h00</option>
+                                                <option>18h00</option>
+                                                <option>19h00</option>
+                                                <option>20h00</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Time and date suggestion 2-->
+                                <div class = "form-group">
+                                    <div class = "row">
+                                        <div class = "col-xs-12">
+                                            <h3>Option 2</h3>
+                                        </div>
+                                    </div>
+                                    <div class = "row">
+                                        <div class = "col-xs-12 col-sm-6">
+                                            <select class = "form-control" id = "day-option2" name = "day-option2">
+                                                <option>Monday</option>
+                                                <option>Tuesday</option>
+                                                <option>Wednesday</option>
+                                                <option>Thursday</option>
+                                                <option>Friday</option>
+                                                <option>Saturday</option>
+                                            </select>
+                                        </div>
+                                        <div class = "col-xs-12 col-sm-6">
+                                            <select class = "form-control"  id = "time-option2" name = "time-option2">
+                                                <option>07h00</option>
+                                                <option>08h00</option>
+                                                <option>09h00</option>
+                                                <option>10h00</option>
+                                                <option>11h00</option>
+                                                <option>12h00</option>
+                                                <option>13h00</option>
+                                                <option>14h00</option>
+                                                <option>15h00</option>
+                                                <option>16h00</option>
+                                                <option>17h00</option>
+                                                <option>18h00</option>
+                                                <option>19h00</option>
+                                                <option>20h00</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Time and date suggestion 3-->
+                                <div class = "form-group">
+                                    <div class = "row">
+                                        <div class = "col-xs-12">
+                                            <h3>Option 3</h3>
+                                        </div>
+                                    </div>
+                                    <div class = "row">
+                                        <div class = "col-xs-12 col-sm-6">
+                                            <select class = "form-control" id = "day-option3" name = "day-option3">
+                                                <option>Monday</option>
+                                                <option>Tuesday</option>
+                                                <option>Wednesday</option>
+                                                <option>Thursday</option>
+                                                <option>Friday</option>
+                                                <option>Saturday</option>
+                                            </select>
+                                        </div>
+                                        <div class = "col-xs-12 col-sm-6">
+                                            <select class = "form-control"  id = "time-option3" name = "time-option3">
+                                                <option>07h00</option>
+                                                <option>08h00</option>
+                                                <option>09h00</option>
+                                                <option>10h00</option>
+                                                <option>11h00</option>
+                                                <option>12h00</option>
+                                                <option>13h00</option>
+                                                <option>14h00</option>
+                                                <option>15h00</option>
+                                                <option>16h00</option>
+                                                <option>17h00</option>
+                                                <option>18h00</option>
+                                                <option>19h00</option>
+                                                <option>20h00</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Time and date suggestion 4-->
+                                <div class = "form-group">
+                                    <div class = "row">
+                                        <div class = "col-xs-12">
+                                            <h3>Option 4</h3>
+                                        </div>
+                                    </div>
+                                    <div class = "row">
+                                        <div class = "col-xs-12 col-sm-6">
+                                            <select class = "form-control" id = "day-option4" name = "day-option4">
+                                                <option>Monday</option>
+                                                <option>Tuesday</option>
+                                                <option>Wednesday</option>
+                                                <option>Thursday</option>
+                                                <option>Friday</option>
+                                                <option>Saturday</option>
+                                            </select>
+                                        </div>
+                                        <div class = "col-xs-12 col-sm-6">
+                                            <select class = "form-control"  id = "time-option4" name = "time-option4">
+                                                <option>07h00</option>
+                                                <option>08h00</option>
+                                                <option>09h00</option>
+                                                <option>10h00</option>
+                                                <option>11h00</option>
+                                                <option>12h00</option>
+                                                <option>13h00</option>
+                                                <option>14h00</option>
+                                                <option>15h00</option>
+                                                <option>16h00</option>
+                                                <option>17h00</option>
+                                                <option>18h00</option>
+                                                <option>19h00</option>
+                                                <option>20h00</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class = "form-group">
+                                    <div class = "row">
+                                        <div class = "col-xs-12">
+                                            <h3>How did you find out Imbeko?</h3>
+                                        </div>
+                                        <div class = "col-xs-12">
+                                            <textarea name="extra-details" class = "form-control" id = 'find-out' name = "find-out" rows = '4' required></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class = "form-group">
+                                    <div class = "row">
+                                        <div class = "col-xs-12">
+                                            <h3>Additional details</h3>
+                                        </div>
+                                        <div class = "col-xs-12">
+                                            <textarea name="extra-details" class = "form-control" id = 'extra-details' name = "extra-details" rows = '4'></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class = "row">
+                                    <div class = "col-lg-4 col-xs-12">
+                                        <button class="btn btn-info submit" type='submit' id = "submit">Submit</button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <div class="messages"></div>
+                        </div>
+                    </form>
+            </div>
+
+        </div>
+
+        <!--footer-->
+          <footer>
+        	<div class="container">
+        		<div class="row">
+        		  <div class="col-xs-12 col-sm-6 copyright">
+        					<a href = "http://www.socialproject.co.za">The Social Project © 2017</a>
+        			</div>
+        			<div class="col-xs-12 col-sm-6 skillup">
+        					 <a href = "https://www.skilluptutors.com">Powered by  <img src = "img/skilluplogo.svg" style = "width: 100px; height: auto"/></a>
+        			</div>
+        			<!--Social media icons not relevant yet
+        			<div class="col-sm-6 col-md-4 col-md-pull-4">
+        				<div class="social_icons">
+        				  <a class="btn btn-social-icon btn-facebook">
+                    <span class="fa fa-facebook"></span>
+                  </a>
+                  <a class="btn btn-social-icon btn-twitter">
+                    <span class="fa fa-twitter"></span>
+                  </a>
+                  <a class="btn btn-social-icon btn-youtube">
+                    <span class="fa fa-youtube"></span>
+                  </a>
+        				</div>
+        			</div>
+        			 -->
+        	  </div>
+        	</div>
+        </footer>
+
+
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.js"></script>
+        <script src="js/navbar.js"></script>
+        <script src = "js/validator.js"></script>
+        <script src = "js/signup.js"></script>
+        <script src = "js/backstretch.js"></script>
+        <script>
+           //$('body').backstretch('img/signup-bg.jpg');
+        </script>
+
+         <!--Google Maps API for search box-->
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC31LKowEHFX9V7lex3JlVZ7_wEzVGsYro&libraries=places"></script>
+        <script>
+           var input = document.getElementById('addressInput')
+
+           var autocomplete = new google.maps.places.Autocomplete(input);
+
+            autocomplete.setComponentRestrictions(
+            {'country': ['za']});
+        </script>
+
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-104379989-1', 'auto');
+          ga('send', 'pageview');
+        </script>
+
+
+    </body>
+</html>
