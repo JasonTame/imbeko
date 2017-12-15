@@ -1,0 +1,760 @@
+/*
+* Style tweaks
+* --------------------------------------------------
+*/
+
+
+
+.clearhack {
+    min-height: 100px;
+}
+
+html,
+body {
+    position: relative;
+    overflow-x: hidden;
+    min-height: 100%;
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+@media(min-width: 1200px) {
+    .container {
+        width: 90%;
+    }
+}
+
+/*Font sizing */
+
+h1 {
+   font-size: 7vmin;
+}
+
+h2 {
+   font-size: 6vmin;
+}
+
+h3 {
+   font-size: 5vmin;
+}
+
+h4 {
+   font-size: 4vmin;
+}
+
+a, p, li, label, input {
+   font-size: 3.5vmin;
+}
+
+.page-title {
+    color: #e84427;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 8vmin;
+}
+
+
+@media (max-width: 768px) {
+    h1 {
+   font-size: 10vmin;
+    }
+
+    h2 {
+       font-size: 9vmin;
+    }
+
+    h3 {
+       font-size: 8vmin;
+    }
+
+    h4 {
+       font-size: 7vmin;
+    }
+
+    a, p, li, label, input {
+       font-size: 6.5vmin;
+    }
+
+    .page-title {
+        font-size: 12vmin;
+    }
+
+
+}
+
+/*Colour Palette*/
+
+.imbeko-red {
+    background-color: #e84427;
+}
+
+.imbeko-yellow {
+    background-color: #f6a000;
+}
+
+.imbeko-blue {
+    background-color: #01b4b5;
+}
+
+/*
+ *
+ *Navbar Code
+ *
+ */
+
+ .navbar {
+    background-color: #212529;
+    border-color: #080808;
+    box-shadow: 0 0 5px rgba(0,0,0,.8);
+ }
+
+.navbar.navbar-fixed-top a{
+    color: #fff;
+}
+
+.nav > li {
+    border: 1px solid #212529;
+    border-radius: 4px;
+}
+
+.navbar-brand {
+  padding: 0px;
+}
+.navbar-brand>img {
+  height: 50px;
+  width: auto;
+}
+
+.nav > li > a:hover {
+    background-color: #f6a000;
+}
+.navbar-brand {
+    font-size: 48px;
+    margin-left: 15px;
+}
+
+
+.navbar-container {
+    padding: 20px 0 20px 0;
+}
+
+.navbar a, li {
+    font-size: 2.5vmin;
+}
+
+@media (max-width: 767px) {
+    .navbar a, li {
+        font-size: 5.5vmin;
+    }
+
+}
+
+.navbar.navbar-fixed-top.fixed-theme {
+    background-color: #212529;
+    border-color: #080808;
+    box-shadow: 0 0 5px rgba(0,0,0,.8);
+}
+
+.navbar.navbar-fixed-top.fixed-theme a {
+    color: #fff;
+}
+
+.navbar-brand.fixed-theme a {
+    font-size: 18px;
+}
+
+.navbar-container.fixed-theme {
+    padding: 0;
+}
+
+.navbar-brand.fixed-theme,
+.navbar-container.fixed-theme,
+.navbar.navbar-fixed-top.fixed-theme,
+.navbar-brand,
+.navbar-container{
+    transition: 0.8s;
+    -webkit-transition:  0.8s;
+}
+
+
+
+.imbeko-menu > li > a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.42857143;
+    color: #fff;
+    white-space: nowrap;
+}
+
+.dropdown > li > a:hover {
+    color: #fff;
+}
+
+.btn {
+    font-size: 3.5vmin;
+}
+
+@media (max-width: 768px) {
+    .btn {
+        font-size: 6.5vmin;
+    }
+
+}
+
+.icon-bar {
+    background-color: #fff;
+}
+
+/*End of navbar code
+*
+*
+*
+**/
+
+#banner {
+    margin-top: 0px;
+    padding-top: 0px;
+    background-color: #01b4b5;
+
+}
+
+.imbeko-logo-white {
+    height: auto;
+    width: 20em;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+.intro{
+    text-align: center;
+
+}
+
+.intro h1 {
+    padding: 10px;
+}
+
+.intro h3 {
+    margin-bottom: 20px;
+    padding-top: 0px;
+    color: #fff;
+}
+
+.intro h4 {
+    color: #fff;
+}
+
+
+.intro a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.intro button {
+    padding: 10px;
+    margin: 50px 0px 50px 0px;
+}
+
+
+/*
+*
+*Carousel
+*
+*/
+
+
+#quote-carousel
+{
+  padding: 0 10px 30px 10px;
+  margin-top: 60px;
+}
+
+/* Control buttons  */
+#quote-carousel .carousel-control
+{
+  background: none;
+  color: #222;
+  font-size: 6.5vmin;
+  text-shadow: none;
+  margin-top: 30px;
+}
+/* Previous button  */
+#quote-carousel .carousel-control.left
+{
+  left: -12px;
+}
+/* Next button  */
+#quote-carousel .carousel-control.right
+{
+  right: -12px !important;
+}
+/* Changes the position of the indicators */
+#quote-carousel .carousel-indicators
+{
+  right: 50%;
+  top: auto;
+  bottom: 0px;
+  margin-right: -19px;
+}
+/* Changes the color of the indicators */
+#quote-carousel .carousel-indicators li
+{
+  background: #c0c0c0;
+}
+#quote-carousel .carousel-indicators .active
+{
+  background: #333333;
+}
+#quote-carousel img
+{
+  width: 250px;
+  height: 100px;
+}
+/* End carousel */
+
+.item blockquote {
+    border-left: none;
+    margin: 0;
+}
+
+.item blockquote img {
+    margin-bottom: 10px;
+}
+
+.item blockquote p:before {
+    content: "\f10d";
+    font-family: 'Fontawesome';
+    float: left;
+    margin-right: 10px;
+}
+
+.item blockquote small {
+    font-size: 3vmin;
+}
+
+
+
+/**
+  MEDIA QUERIES
+*/
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    #quote-carousel
+    {
+      margin-bottom: 0;
+      padding: 0 40px 30px 40px;
+    }
+
+}
+
+/* Small devices (tablets, up to 768px) */
+@media (max-width: 768px) {
+
+    /* Make the indicators larger for easier clicking with fingers/thumb on mobile */
+
+    #quote-carousel .carousel-indicators {
+        bottom: -20px !important;
+    }
+    #quote-carousel .carousel-indicators li {
+        display: inline-block;
+        margin: 0px 5px;
+        width: 15px;
+        height: 15px;
+    }
+    #quote-carousel .carousel-indicators li.active {
+        margin: 0px 5px;
+        width: 20px;
+        height: 20px;
+    }
+    .item blockquote small {
+    font-size: 6.5vmin;
+}
+
+}
+
+
+.imbeko-button {
+    background-color: #f6a000;
+    margin: 15px;
+    color: #fff;
+}
+
+.imbeko-button:hover {
+    color: #fff;
+    background-color: #e84427;
+}
+
+/*
+*
+*Steps
+*
+*/
+
+.steps {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.steps h1 {
+    font-weight: 700;
+    color: #e84427;
+}
+.steps h2 {
+    font-weight: 700;
+    color: #e84427;
+}
+
+.steps p {
+}
+
+.step {
+    margin: 20px 0px 20px 0px;
+}
+
+.stepimage {
+    min-height: 450px;
+}
+
+
+.separator {
+    width: 30px;
+}
+
+.separator hr {
+    border-bottom: 1px solid #8c8b8b;
+}
+
+.tutor-find {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 6.5vmin;
+
+}
+
+.tutor-find a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/*
+*
+*Footer
+*
+*/
+
+footer {
+    padding: 10px 0px 10px 0px;
+    margin-top: 40px;
+    background-color: #212529;
+    color: #fff;
+}
+
+
+.copyright {
+    font-size: 20px;
+    text-align: left;
+
+}
+
+.copyright a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.skillup {
+    text-align: right;
+}
+
+
+
+.skillup a {
+    padding-top: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.social_icons {
+    text-align: center;
+}
+
+.social_icons a {
+    color: #f2d73e;
+}
+
+
+/*On smaller tablets and mobile devices, the column size is full width, so the text needs to be centred.*/
+@media (max-width:768px) {
+    .copyright {
+        text-align: center;
+    }
+
+    .skillup {
+        text-align: center;
+    }
+}
+
+
+/*
+*
+*About Page
+*
+*/
+
+.blockquote-footer {
+    background-color: #fff;
+}
+
+.about-text p{
+    padding-bottom: 40px;
+}
+
+.about-img {
+    margin-bottom: 40px;
+}
+
+.about-img img {
+    width: 100%;
+}
+
+
+.radio-ad {
+    margin-top: 20px;
+}
+
+.cta {
+    background-color: #e84427;
+    width: 100%;
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+}
+
+.cta h1 {
+    color: #fff;
+    margin-top: 30px;
+    padding: 0px;
+}
+
+.cta a {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.cta a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+}
+
+.signup-button {
+   padding: 20px;
+   line-height: 1.3333333;
+   border-radius: 6px;
+
+}
+
+.signup-button:hover {
+    opacity: 0.6;
+
+}
+
+.signup-button a:hover {
+     color: #fff;
+}
+
+
+@media (max-height: 768px) {
+
+
+    .signup-button {
+        padding-bottom: 30px;
+    }
+}
+
+
+
+
+/*
+*
+*FAQ Page
+*
+*/
+@media(min-width: 1200px) {
+    .container faq {
+        min-height: 80%;
+    }
+}
+
+
+
+.list-group-item {
+    font-size: 3.5vmin;
+}
+
+@media (max-width: 768px) {
+    .list-group-item {
+        font-size: 6.5vmin;
+    }
+}
+
+.faq-tab:active {
+    background-color: #00aeab;
+}
+
+.faq {
+    margin-top: 30px;
+    margin-bottom: 80px;
+    background-color: #fff;
+
+}
+
+.faq-title-div {
+    margin-bottom: 20px;
+}
+
+.panel-heading h2 {
+    color: #f6a000;
+}
+
+panel-group a:hover, a:focus {
+    text-decoration: none;
+}
+
+table {
+    margin-bottom: 15px;
+}
+
+th, td {
+    padding: 5px;
+    border: 1px solid gray;
+
+}
+
+
+.panel a:hover {
+    text-decoration: none;
+}
+/*
+*
+*Contact Page
+*
+*/
+
+.contact-title {
+    margin-bottom: 30px;
+}
+
+.contact-icon i {
+    margin-right: 5px;
+}
+
+
+.contact-info p {
+    padding-bottom: 20px;
+}
+
+.contact-img img {
+    min-width: 100%;
+
+}
+
+.contact-instructions {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+
+.form-control {
+    font-size: 2.5vmin;
+    /* height: 100px; Removing this as it seems unnecessary. Will check again on other browsers */
+}
+
+@media (max-width: 768px) {
+    .form-control {
+        font-size: 4.5vmin;
+    }
+}
+/*
+*
+*Sign Up Page
+*
+*/
+.messages {
+    margin: 10px;
+}
+
+#signup-body {
+    min-height: 850px;
+}
+
+.view-heading {
+    color: #00aeab;
+    font-size: 6vmin;
+}
+
+.signup-form {
+    margin-top: 30px;
+    margin-bottom: 80px;
+    background-color: #fff;
+
+}
+
+.next {
+    font-size: 3.5vmin;
+}
+
+
+
+.helptext {
+    color: gray;
+}
+
+@media (max-width: 768px) {
+    .view-heading {
+        font-size: 9vmin;
+    }
+
+
+    .next {
+        font-size: 6.5vmin;
+    }
+}
+
+
+
+/*
+*
+* Legal Page
+*
+*/
+
+.legal-tab:active {
+    background-color: #00aeab;
+}
+
+.legal {
+    margin-top: 30px;
+    margin-bottom: 80px;
+    background-color: #fff;
+
+}
+
+.legal-title-div {
+    margin-bottom: 20px;
+}
