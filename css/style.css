@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Arvo|Didact+Gothic');
 /*
 * Style tweaks
 * --------------------------------------------------
@@ -235,26 +236,28 @@ a, p, li, label, input {
 }
 .intro{
     text-align: center;
+    min-height: 25em;
 
 }
 
 .intro h1 {
+  font-family: 'Arvo', serif;
     padding: 10px;
 }
 
-.intro h3 {
-    margin-bottom: 20px;
-    padding-top: 0px;
+.intro h1 {
+    margin: 20px;
+    padding-top: 20px;
     color: #fff;
 }
 
-.intro h4 {
+.intro h2 {
     color: #fff;
 }
 
 
 .intro a {
-    text-decoration: none;
+    font-size: 5vmin;
     color: #fff;
 }
 
@@ -263,6 +266,11 @@ a, p, li, label, input {
     margin: 50px 0px 50px 0px;
 }
 
+@media (max-width: 767px) {
+    .intro a {
+        font-size: 6.5vmin;
+    }
+}
 
 /*
 *
